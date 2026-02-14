@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Word!</title>
+    <style>
+        body{
+            background-color: rgb(172, 172, 255);
+            color: white; /*comentário em css*/
+            font: normal 15pt Arial;
+        }
+        h1{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Comentário em html-->
+    <p>Esse é meu primeiro estudo de variáveis usando JavaScript.</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um numero')) //window.prompt retorna string
+        var n2 = Number.parseInt(window.prompt('Digite outro número')) 
+        var s = n1 + n2
+        window.alert('A soma dos valores é igual a ' + s)
+        var n3 = Number.parseFloat(window.prompt('Digite um numero')) //Agora utilizando números decimais
+        var n4 = Number.parseFloat(window.prompt('Digite outro número')) 
+        var s1 = n3 + n4
+        window.alert('A soma dos valores é igual a ' + s1)
+        /*
+        -(Number + Number) para adição
+        -(String + String) para concatenação
+        -para converter usamos Number.parseInt(n) para números inteiros ou Number.parseFloat(n) para números fracionados
+        -"number" é uma forma simplificada onde o JS identifica automaticamente o tipo de valor dado
+        -para fazer ou contrário, ou seja, converter de string para number utilizamos String(n) ou n.toString
+        */
+    </script>
+</body>
+</html>
